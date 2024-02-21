@@ -1,0 +1,90 @@
+/*
+공백 : 밑에 있는 자손들까지 다 확인함
+> : 바로 밑에 있는 2촌가지만 확인
+, : 같은 차원에 있는 사촌들만 확인
+selector가 중요함. 
+HTML CSS design tree : w3에 있음.
+dom tree 그릴 줄 알아야 함
+justify-content : 가로로 있는 거 정렬
+item-align : 세로로 있는 거 정렬
+*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+main {
+    width: 60%;
+    background-color: aliceblue;
+    margin-left: 20%;
+}
+header {
+    padding: 20px;
+}
+header nav ul {
+    display: flex; /*세로로 있는 리스트 가로로 바꿔줌*/
+    flex-wrap: wrap; /*자동 줄바꿈*/
+    margin: 20px;
+    padding: 10px;
+    list-style: none;
+    justify-content: right; 
+    width : 95%;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+nav a:hover, li:hover { /*공백은 자손 찾아 내려가는 거, 쉽표는 같은 차원*/
+    background-color: brown;
+}
+header nav ul li {
+    margin : 5px;
+    padding : 10px;
+    background-color: rgb(0, 174, 255);
+    color: white;
+    border-radius: 5px;
+}
+header h1 { text-align: center;}
+article {
+    padding : 30px;
+}
+article p {
+    margin: 20px;
+}
+
+section {
+    background-color: white;
+    margin : 20px;
+    padding : 10px;
+}
+section div {
+    display: flex;
+    margin : 10px;
+}
+img {
+    border-radius: 50%;
+}
+section p {
+    margin-left: 20px;
+}
+footer {
+    padding : 20px;
+    background-color: black;
+}
+footer li {
+    list-style: none;
+    margin : 10px;
+    color: white;
+    font-size: small;
+}
+@media only screen and (max-width: 768px) {
+    main {
+        width: 100%;
+        margin-left: 0px;
+        background-color: lightblue;
+    }
+    header h1 {
+        font-size: medium;
+        color: white;
+    }
+  }
+    
