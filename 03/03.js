@@ -4,8 +4,16 @@
 
 */
 const handleClick = (n) => {
-    document.querySelector ("#msgArea").innerHTML = `<h2>button ${n}이 눌러졌습니다</h2>`;
-}
+    let msg ;
+    if (n == 1) msg ="Hello"
+    else msg = "GoodBye"
+
+    document.querySelector ("#msgArea").innerHTML = `<h2>${msg}</h2>`;
+    /*let msg ;
+    if (n == 1) msg =<h2>"Hello"</h2>
+    else msg = <h2>"GoodBye"</h2>
+    document.querySelector ("#msgArea").innerHTML = msg;
+}*/
 /*함수작성 1 */
 /* alert("안녕하세요~")
 // function handleClick(n) {
