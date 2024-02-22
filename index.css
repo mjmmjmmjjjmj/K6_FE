@@ -1,6 +1,6 @@
 * {
-    padding: 6px;
-    margin: 8px;
+    padding: 0px;
+    margin: 0px;
 }
 
 main { 
@@ -25,14 +25,22 @@ article {
 }
 article ul {
     width: 80%;
-    background-color: papayawhip;
+    background-color:blue;
     margin-top: 20px;
     list-style: none;
 }
-alticle li {
+article li {
     display: flex;
     height: 20px;
     border: 1px dotted gray;
     align-items: center;
     padding: 10px;
+}
+article a {
+    text-decoration: none;
+    color: white;
+}
+article li :hover {
+    background-color: goldenrod;
+    color: white;
 }
