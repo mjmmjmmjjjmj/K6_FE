@@ -17,3 +17,31 @@ h2 {
     font-size: medium;
     color: blue;
 }
+header div a { 
+    text-decoration: none;
+    padding: 10px;
+    color: midnightblue;
+    background-color: white;
+    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 60px;   
+    /* flex 넣은 대상=>박스=>그 안을 한정해서 자유롭게 쓸 수 있음 */
+    /* 구조는 html에서 잡고 디자인은 css */
+    /* javascript에서는 함수 쓸 수 있음+만들기도 */
+}
+
+.btGroup {
+    background-color: seashell
+}
+.btGroup > button {
+background-color: green;
+}
+#btArea2 button { /*아이디 + 자손까지 들어간 button이 더 우선순위로 먹혔움,*/
+    background-color: black;
+}
+#bt3 {
+    background-color: blueviolet;
+}
