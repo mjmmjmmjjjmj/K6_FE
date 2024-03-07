@@ -1,0 +1,55 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input[type=number] {
+    display: inline-flex;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+}
+section > div {
+    background-color: rgba(255, 253, 230, 0.295)
+}
+section > div > div {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+span {
+    font-size: medium;
+    font-weight: bold;
+    color: red;
+}
+#msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+section button {
+    background-color: darkblue;
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 10%;
+    font-weight: bolder;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+button:hover {
+    cursor: pointer;
+    background-color: green;
+    color : white
+}
