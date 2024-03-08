@@ -2,33 +2,83 @@
     padding: 0px;
     margin: 0px;
 }
-section > div {
+
+section > h1 {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
-input[type=number] {
+
+/* input[type=number] {
     display: inline-flex;
-    width: 200px;
+    width: 400px;
     height: 40px;
     text-align: center;
-}
+} */
 section > div {
     background-color: rgba(255, 253, 230, 0.295)
 }
-section > div > div {
+section > section div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+section > div {
     width: 100%;
     text-align: center;
     justify-content: center;
     align-items: center;
 
 }
-span {
-    font-size: medium;
-    font-weight: bold;
-    color: red;
+section span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin : 5px;
+
+    width: 40px;
+    height: 40px;
+    /*border : 1px solid*/
+    border-radius: 50%;
+
+    font-size: large;
+    font-weight: bolder;
 }
+.sp0 {
+    background-color: green;
+    color: white;
+}
+.sp1 {
+    background-color: darkslategrey;
+    color: white;
+}
+.sp2 {
+    background-color: dodgerblue;
+    color: white;
+}
+.sp3 {
+    background-color: rgb(255, 166, 0);
+    color: white;
+}
+.sp4 {
+    background-color: brown;
+    color: white;
+}
+.sp5 {
+    background-color: rgb(144, 42, 165);
+    color: white;
+}
+.sp7 {
+    background-color: rgb(211, 3, 117);
+    color: white;
+}
+
+#numDisp {
+    margin : 20px;
+}
+
 #msg {
     display: flex;
     justify-content: center;
@@ -37,7 +87,7 @@ span {
     padding-bottom: 20px;
     text-align: center;
 }
-section button {
+button {
     background-color: darkblue;
     height: 40px;
     width: 100px;
